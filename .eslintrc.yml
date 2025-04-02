@@ -5,6 +5,7 @@ plugins:
   - import
   - no-unsanitized
 env:
+  ecmaVersion: 2020
   node: true
   browser: true
   es6: true
