@@ -54,7 +54,8 @@
     "config": "src/utils/test/.mocharc.json"
   },
   "scripts": {
-    "build": "vite build",
+    "build": "gulp",
+    "build:web-components": "vite build --config='./vite.config.banner.js'",
     "lint": "npm run lint:js && npm run lint:sass",
     "lint:js": "eslint packages/**/**/*.js",
     "lint:sass": "gulp lintSass",
@@ -108,6 +109,7 @@
   },
   "homepage": "https://github.com/uswds/uswds#readme",
   "dependencies": {
+    "lit": "^3.2.1",
     "receptor": "1.0.0"
   },
   "devDependencies": {
