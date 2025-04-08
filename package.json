@@ -147,6 +147,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-airbnb-base": "^0.0.1-security",
     "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-lit": "^2.0.0",
     "eslint-plugin-no-unsanitized": "4.1.2",
     "fancy-log": "2.0.0",
     "file-loader": "6.2.0",

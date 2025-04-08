@@ -5,6 +5,7 @@ import importPlugin from "eslint-plugin-import";
 import noUnsanitized from "eslint-plugin-no-unsanitized";
 import path from "path";
 import { fileURLToPath } from "url";
+import { configs as litConfigs } from "eslint-plugin-lit";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -71,6 +72,7 @@ const testConfig = {
 };
 
 export default [
+  litConfigs["flat/recommended"],
   eslint.configs.recommended,
   ...airbnbConfig,
   customConfig,
