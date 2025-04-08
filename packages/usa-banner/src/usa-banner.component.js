@@ -109,7 +109,7 @@ export class UsaBanner extends LitElement {
   // Get English or Spanish strings. Default to English if an unknown `lang` is passed.
   // Ex: <usa-banner lang="zy"></usa-banner>
   get _bannerText() {
-    const content = this.data[this.lang] || this.data["en"];
+    const content = this.data[this.lang] || this.data.en;
     return content;
   }
 
@@ -186,7 +186,7 @@ export class UsaBanner extends LitElement {
   static styles = [unsafeCSS(bannerStyles)];
 
   render() {
-    const classes = { ["usa-banner__header--expanded"]: this.isOpen };
+    const classes = { "usa-banner__header--expanded": this.isOpen };
     // ? Is there a better way to fallback to a default value is passed value doesn't match?
     // Example: User passes `tld="zzz"` --> uses "gov" domain instead of `zzz`.
     const tld = this.tld === "mil" ? "mil" : "gov";

@@ -49,6 +49,7 @@ const customConfig = {
       clearInterval: true,
       FileReader: "readonly",
       getComputedStyle: true,
+      customElements: true,
 
       // Test-specific globals
       describe: true,
