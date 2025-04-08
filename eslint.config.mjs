@@ -27,6 +27,7 @@ const customConfig = {
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "no-unsanitized/method": "error",
     "no-unsanitized/property": "error",
+    "import/no-unresolved": [2, { ignore: ["\\.scss\\?inline$"] }],
   },
   languageOptions: {
     parserOptions: {
