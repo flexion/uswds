@@ -27,6 +27,7 @@ const customConfig = {
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "no-unsanitized/method": "error",
     "no-unsanitized/property": "error",
+    "no-underscore-dangle": "warn", // Allow _ in variable names, but discourage it
     "import/no-unresolved": [2, { ignore: ["\\.scss\\?inline$"] }],
   },
   languageOptions: {
