@@ -146,7 +146,7 @@ export default class UsaBanner extends LitElement {
     `;
   }
 
-  lockIcon() {
+  static lockIcon() {
     return html`
       <span
         class="usa-banner__icon-lock"
