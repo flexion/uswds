@@ -29,7 +29,8 @@ import iconHttps from "./img/icon-https.svg";
  *
  * @tagname usa-banner
  */
-export class UsaBanner extends LitElement {
+
+export default class UsaBanner extends LitElement {
   static properties = {
     lang: {
       type: String,
