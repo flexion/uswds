@@ -28,7 +28,7 @@ const customConfig = {
     "no-unsanitized/method": "error",
     "no-unsanitized/property": "error",
     "no-underscore-dangle": "warn", // Allow _ in variable names, but discourage it
-    "import/no-unresolved": [2, { ignore: ["\\.scss\\?inline$"] }],
+    "import/no-unresolved": [2, { ignore: ["\\.(s?)css\\?inline$"] }],
   },
   languageOptions: {
     parserOptions: {
