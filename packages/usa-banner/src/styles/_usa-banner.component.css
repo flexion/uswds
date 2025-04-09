@@ -1,8 +1,3 @@
-/* import close from "@uswds/uswds/img/usa-icons/close.svg";
-import expandMore from "@uswds/uswds/img/usa-icons/expand_more.svg";
-import expandLess from "@uswds/uswds/img/usa-icons/expand_less.svg";
-import lock from "@uswds/uswds/img/usa-icons/lock.svg"; */
-
 :host {
   --icon-lock: url("../img/lock.svg");
   --icon-chevron-up: url("/packages/usa-icon/src/img/usa-icons-bg/expand_less--white.svg");
