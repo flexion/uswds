@@ -3,6 +3,7 @@ import { unsafeHTML } from "lit/directives/unsafe-html.js"; // eslint-disable-li
 import { classMap } from "lit/directives/class-map.js"; // eslint-disable-line import/extensions
 
 import bannerStyles from "../_index.scss?inline";
+import bannerComponentStyles from "./styles/_usa-banner.component.css?inline";
 
 import usFlagSmall from "./img/us_flag_small.png";
 import iconDotGov from "./img/icon-dot-gov.svg";
@@ -184,7 +185,7 @@ export default class UsaBanner extends LitElement {
     `;
   }
 
-  static styles = [unsafeCSS(bannerStyles)];
+  static styles = [unsafeCSS(bannerStyles), unsafeCSS(bannerComponentStyles)];
 
   render() {
     const classes = { "usa-banner__header--expanded": this.isOpen };
