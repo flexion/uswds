@@ -61,6 +61,7 @@
   background-size: cover;
   display: inline-block;
   height: 1.5ex;
+  background-image: var(--icon-lock);
   mask-image: var(--icon-lock);
   mask-position: center;
   mask-repeat: no-repeat;
