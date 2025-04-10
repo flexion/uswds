@@ -6,6 +6,7 @@ import noUnsanitized from "eslint-plugin-no-unsanitized";
 import path from "path";
 import { fileURLToPath } from "url";
 import { configs as litConfigs } from "eslint-plugin-lit";
+import globals from "globals";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -36,16 +37,16 @@ const customConfig = {
       sourceType: "module",
     },
     globals: {
+      ...globals.node,
+      ...globals.es6,
+      ...globals.mocha,
+
+      // Use globals from eslint where possible, but globals.browser breaks stuff for some reason
       window: true,
       document: true,
       navigator: true,
       console: true,
       module: true,
-      require: true,
-      process: true,
-      __dirname: true,
-      __filename: true,
-      Buffer: true,
       setTimeout: true,
       clearTimeout: true,
       setInterval: true,
@@ -53,14 +54,6 @@ const customConfig = {
       FileReader: "readonly",
       getComputedStyle: true,
       customElements: true,
-
-      // Test-specific globals
-      describe: true,
-      it: true,
-      before: true,
-      after: true,
-      beforeEach: true,
-      afterEach: true,
     },
   },
 };
