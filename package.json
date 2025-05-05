@@ -37,6 +37,7 @@
       "import": "./dist/js/uswds.min.js",
       "default": "./dist/js/uswds.min.js"
     },
+    "./components/*": "./dist/components/*.js.mjs",
     "./src/js/components": "./packages/uswds-core/src/js/index.js",
     "./src/img/*": "./dist/img/*",
     "./js": "./packages/uswds-core/src/js/index.js",
@@ -54,8 +55,9 @@
     "config": "src/utils/test/.mocharc.json"
   },
   "scripts": {
-    "build": "gulp",
+    "build": "gulp && npm run build:web-components",
     "build:web-components": "vite build --config='./vite.config.banner.js'",
+    "build:web-components:cdn": "vite build --config='./vite.config.banner.cdn.js'",
     "lint": "npm run lint:js && npm run lint:sass",
     "lint:js": "ESLINT_USE_FLAT_CONFIG=true eslint --config='eslint.config.mjs' packages/**/**/*.js ",
     "lint:sass": "gulp lintSass",

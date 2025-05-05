@@ -4,9 +4,6 @@ import config from "./vite.config.components";
 export default defineConfig({
   ...config,
   build: {
-    rollupOptions: {
-      external: ["lit"],
-    },
     lib: {
       name: "usa-banner",
       entry: {
