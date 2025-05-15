@@ -4,6 +4,7 @@ import config from "./vite.config.components";
 export default defineConfig({
   ...config,
   build: {
+    emptyOutDir: false,
     lib: {
       name: "usa-banner",
       entry: {
