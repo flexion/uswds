@@ -26,7 +26,10 @@
     ".browserslistrc",
     "CONTRIBUTING.md",
     "gulpfile.js",
-    "webpack.twig.config.js"
+    "webpack.twig.config.js",
+    "vite.config.js",
+    "vite.config.banner.cdn.js",
+    "vite.config.components.js"
   ],
   "module": "./dist/js/uswds.min.js",
   "exports": {
