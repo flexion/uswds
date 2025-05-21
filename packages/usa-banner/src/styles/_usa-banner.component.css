@@ -84,7 +84,7 @@
   }
 
   .usa-banner__button::after {
-    color: var(--theme-banner-chevron-color);
+    background-color: var(--theme-banner-chevron-color);
     top: 0;
     right: 0;
   }
