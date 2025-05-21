@@ -191,7 +191,7 @@ export default class UsaBanner extends LitElement {
 
   render() {
     const classes = { "usa-banner__header--expanded": this.isOpen };
-    // ? Is there a better way to fallback to a default value is passed value doesn't match?
+    // ? Is there a better way to fallback to a default value if passed value doesn't match?
     // Example: User passes `tld="zzz"` --> uses "gov" domain instead of `zzz`.
     const tld = this.tld === "mil" ? "mil" : "gov";
     const { banner } = this._bannerText;
