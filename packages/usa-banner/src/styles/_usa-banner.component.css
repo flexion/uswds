@@ -5,8 +5,10 @@
   --icon-close: url("/packages/usa-icon/src/img/usa-icons-bg/close--white.svg");
   --theme-banner-background-color: var(--usa-base-lightest, #f0f0f0);
   --theme-banner-font-family: var(--usa-font-ui, system-ui, sans-serif);
+  --theme-banner-text-color: var(--usa-text-base, #1b1b1b);
   --theme-banner-link-color: var(--theme-link-color, #005ea2);
   --theme-banner-link-color-hover: var(--theme-link-hover-color, #1a4480);
+  --theme-banner-chevron-color: var(--theme-banner-link-color, #005ea2);
   /* Missing theme-banner-max-width because we can't pass custom property to media queries. */
 }
 
@@ -16,6 +18,7 @@
 
 .usa-banner {
   background-color: var(--theme-banner-background-color);
+  color: var(--theme-banner-text-color);
   font-family: var(--theme-banner-font-family);
 }
 
@@ -81,6 +84,7 @@
   }
 
   .usa-banner__button::after {
+    color: var(--theme-banner-chevron-color);
     top: 0;
     right: 0;
   }
