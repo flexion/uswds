@@ -16,9 +16,11 @@ import iconHttps from "./img/icon-https.svg";
  * @attribute {string} label - The custom aria label users can override.
  * @attribute {string} tld - The top level domain for the site.
  *
+ * @cssprop --theme-banner-text-color - Sets banner text color.
  * @cssprop --theme-banner-background-color - Sets banner background color.
  * @cssprop --theme-banner-font-family - Sets banner font family.
  * @cssprop --theme-banner-link-color - Sets the default link color.
+ * @cssprop --theme-banner-chevron-color - Sets the default chevron color.
  * @cssprop --theme-banner-link-hover-color - Sets the default link color.
  *
  * @slot banner-text - The text for official government website text.
