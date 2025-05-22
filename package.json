@@ -198,6 +198,9 @@
     "webpack": "5.98.0",
     "webpack-cli": "5.1.4"
   },
+  "optionalDependencies": {
+    "sass-embedded-linux-x64": "^1.89.0"
+  },
   "overrides": {
     "nwsapi": "2.2.13"
   }
