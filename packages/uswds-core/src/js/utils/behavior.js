@@ -56,6 +56,7 @@
  *
  * @return {Behavior} Component initializer.
  */
+
 module.exports = (events, props) => {
   // Normalize event handlers to an array of arguments to be passed to either `addEventListener` or
   // `removeEventListener` during component initialization.
