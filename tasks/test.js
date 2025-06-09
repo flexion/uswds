@@ -10,14 +10,16 @@ module.exports = {
   // run unit test.
   unitTests() {
     return src([
+      // Component tests.
       "packages/usa-*/**/*.spec.js",
+      // Core utils tests.
       "packages/uswds-*/**/*.spec.js",
-      "!packages/uswds-core/src/test/sass.spec.js"
+      // SASS unit tests, run separately.
+      "!packages/uswds-core/src/test/sass.spec.js",
     ]).pipe(mocha(mochaConfig));
   },
 
   sassTests() {
-    return src("packages/uswds-core/src/test/sass.spec.js")
-      .pipe(mocha());
+    return src("packages/uswds-core/src/test/sass.spec.js").pipe(mocha());
   },
 };
